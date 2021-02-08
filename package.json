@@ -1,0 +1,10 @@
+{
+  "name": "mogo",
+  "version": "0.0.1",
+  "description": "Mogo engine",
+  "main": "index.js",
+  "repository": "https://github.com/Nuuf/mogo",
+  "author": "nuuf",
+  "license": "MIT",
+  "private": false
+}
