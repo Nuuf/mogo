@@ -1,0 +1,55 @@
+Arguments: 
+  /Users/nuuf/.nvm/versions/node/v15.7.0/bin/node /Users/nuuf/.nvm/versions/node/v15.7.0/bin/yarn add -D eslint eslint-config-prettier eslint-plugin-prettier html-webpack-plugin prettier ts-loader typescript webpack webpack-cli weback-dev-server @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+PATH: 
+  /Users/nuuf/.nvm/versions/node/v15.7.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/nuuf/Library/Android/sdk/tools:/Users/nuuf/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.7.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/weback-dev-server: Not found
+      at Request.params.callback [as _callback] (/Users/nuuf/.nvm/versions/node/v15.7.0/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/Users/nuuf/.nvm/versions/node/v15.7.0/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (node:events:379:20)
+      at Request.<anonymous> (/Users/nuuf/.nvm/versions/node/v15.7.0/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (node:events:379:20)
+      at IncomingMessage.<anonymous> (/Users/nuuf/.nvm/versions/node/v15.7.0/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (node:events:485:28)
+      at IncomingMessage.emit (node:events:391:22)
+      at endReadableNT (node:internal/streams/readable:1307:12)
+      at processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+npm manifest: 
+  {
+    "name": "mogo",
+    "version": "0.0.1",
+    "description": "mogo engine",
+    "scripts": {
+      "start": "webpack-dev-server --mode=development --env=development",
+      "build-front": "yarn clean-back && tsc --project src/tsconfig.front.json",
+      "build-back": "yarn clean-front && tsc --project src/tsconfig.back.json",
+      "build-full": "yarn build-front && yarn build-back",
+      "clean-front": "rimraf lib/front",
+      "clean-back": "rimraf lib/back",
+      "clean-full": "rimraf lib",
+      "lint": "eslint src/**/*.ts playground/**/*.ts"
+    },
+    "main": "index.js",
+    "repository": "https://github.com/Nuuf/mogo",
+    "author": "nuuf",
+    "license": "MIT",
+    "private": false
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
